@@ -7,11 +7,11 @@ import subprocess
 import socket
 import sys
 
-import src.check_user_input as checkUserInput
-import src.configureIP as confIP
-import src.configureNic as confNIC
-import src.configureVPN as confVPN
-import src.test as test
+import check_user_input as checkUserInput
+import configureIP as confIP
+import configureNic as confNIC
+import configureVPN as confVPN
+import test as test
 
 # Functions
 def configure_or_reset():
