@@ -18,6 +18,7 @@ def configure_or_reset():
 
 	while answer != "1" and answer != "2":
 		answer = input("Voulez-vous: \n[1]: Effectuer une configuration particuliere\n[2]: Effectuer un reset des parametres\nReponse: ")
+		print(answer)
 
 	return answer
 
