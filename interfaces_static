@@ -1,0 +1,13 @@
+# Wired adapter #1
+auto eth0
+	iface eth0 inet static
+	address 172.16.64.1
+	netmask 255.255.255.248
+	hwaddress ether 00:13:50:50:15:f1
+	iface eth0 inet6 static
+        address FDC8:1001:95B4:828A:213:5005:00D2:C302
+	netmask 64
+
+# Local loopback
+auto lo
+	iface lo inet loopback
