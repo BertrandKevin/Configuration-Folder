@@ -11,7 +11,6 @@ import check_user_input as checkUserInput
 import configureIP as confIP
 import configureNic as confNIC
 import configureVPN as confVPN
-import test as test
 
 # Functions
 def configure_or_reset():
@@ -46,24 +45,22 @@ def configuration_program():
 def main():
 	"Run the application"
 	
-	test.test()
-	
-#	configurationOption = configure_or_reset()
+	configurationOption = configure_or_reset()
 
 	# 1 = Configuration by the user
 	# 2 = Reset of the router
-#	if configurationOption == "1":
-#		configuration_program()
-#	elif configurationOption == "2":
-#		# Reset IP Addresses settings
-#		netmask = "255.255.255.0"
-#		routerAddress = "192.168.16.1"
-#		confIP.search_network_informations(routerAddress, netmask, "/var/snap/ssnmode", "interfaces_static")
+	if configurationOption == "1":
+		configuration_program()
+	elif configurationOption == "2":
+		# Reset IP Addresses settings
+		netmask = "255.255.255.0"
+		routerAddress = "192.168.16.1"
+		confIP.search_network_informations(routerAddress, netmask, "/var/snap/ssnmode", "interfaces_static")
 
 		# Reset NIC settings
-#		aftr = "fd1e:d0d6:d81d:e070::76"
-#		countryCode = ""
-#		confNIC.set_nic_settings(aftr, countryCode)
+		aftr = "fd1e:d0d6:d81d:e070::76"
+		countryCode = ""
+		confNIC.set_nic_settings(aftr, countryCode)
 
 # Starting point
 if __name__ == '__main__':
