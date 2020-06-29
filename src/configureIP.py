@@ -6,7 +6,7 @@ import platform
 import subprocess
 import uuid
 
-import src.check_user_input as checkUserInput
+import check_user_input as checkUserInput
 
 # Functions
 def confirmation_address(address, what):
