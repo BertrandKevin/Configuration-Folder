@@ -16,7 +16,7 @@ import configureVPN as confVPN
 def configure_or_reset():
 	answer = ""
 
-	while answer != "1" and answer != "2":
+	while answer != "1\n" and answer != "2\n":
 		answer = input("Voulez-vous: \n[1]: Effectuer une configuration particuliere\n[2]: Effectuer un reset des parametres\nReponse: ")
 		print(answer)
 
