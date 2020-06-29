@@ -4,7 +4,7 @@ import os
 import platform
 import subprocess
 
-import src.check_user_input as checkUserInput
+import check_user_input as checkUserInput
 
 def set_nic_settings(aftr, countryCode):
 	if "Core" not in platform.platform():
