@@ -230,4 +230,3 @@ def main():
 		configure_ipv6()
 
 	search_network_informations(routerAddress, mask, "/var/snap/ssnmode", "interfaces_static")
-© 2020 GitHub, Inc.
